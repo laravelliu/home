@@ -45,18 +45,18 @@
 <!-- END : LOGIN PAGE 5-1 -->
 
 <!--[if lt IE 9]>
-<script src="/assets/respond.min.js"></script>
-<script src="/assets/excanvas.min.js"></script>
+<script src="/js/respond.min.js"></script>
+<script src="/js/excanvas.min.js"></script>
 <![endif]-->
 
 @section ('javascript')
 <!-- BEGIN CORE PLUGINS -->
-<script src="/assets/jquery.min.js" type="text/javascript"></script>
+<script src="/js/jquery.min.js" type="text/javascript"></script>
 <script src="/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="/assets/js.cookie.min.js" type="text/javascript"></script>
+<script src="/js/js.cookie.min.js" type="text/javascript"></script>
 <script src="/vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
 <script src="/vendor/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-<script src="/assets/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="/js/jquery.blockui.min.js" type="text/javascript"></script>
 <script src="/vendor/uniform/jquery.uniform.min.js" type="text/javascript"></script>
 <script src="/vendor/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
