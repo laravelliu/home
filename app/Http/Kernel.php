@@ -51,7 +51,6 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
 
-
             \App\Http\Middleware\Authenticate::class,
             //判断是否邮箱验证过
             \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,

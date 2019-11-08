@@ -22,3 +22,19 @@ Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 Auth::routes(['verify'=>true]);
 
 Route::get('/home', 'Admin\DashboardController@index')->name('home')->middleware('verified');
+
+//简历
+Route::get('/lfs', function(){
+    return view('resume');
+});
+
+//结婚时间
+Route::get('/love', function(){
+    return view('resume');
+});
+
+//我的生命
+Route::get('/life', function(){
+    return view('resume');
+});
+
