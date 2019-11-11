@@ -16,7 +16,7 @@
     <!-- END THEME GLOBAL STYLES -->
 
     <!-- BEGIN PAGE LEVEL STYLES -->
-    <link href="/css/login-5.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/login.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL STYLES -->
     <!-- BEGIN THEME LAYOUT STYLES -->
 

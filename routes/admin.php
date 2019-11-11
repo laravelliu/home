@@ -10,3 +10,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('dashboard','DashboardController@index')->middleware('admin');
 
+
+Route::get('count','DashboardController@index');

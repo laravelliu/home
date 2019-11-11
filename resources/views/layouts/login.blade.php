@@ -34,7 +34,7 @@
     <div class="row bs-reset">
         <div class="col-md-6 bs-reset">
             <div class="login-bg" style="background-image:url(/images/login/bg1.jpg)">
-                <img class="login-logo" src="/images/login/logo.png" />
+                <a class="navbar-brand font-default"  href="{{ url('/') }}">{{ config('app.name')}}</a>
             </div>
         </div>
 

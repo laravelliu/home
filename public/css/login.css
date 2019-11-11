@@ -39,8 +39,7 @@
         color: #a0a9b4;
         font-size: 15px;
         line-height: 22px; }
-      .user-login-5 .login-container > .login-content > .login-form,
-      .user-login-5 .login-container > .register-content > .login-form{
+      .user-login-5 .login-container > .login-content > .login-form{
         margin-top: 80px;
         color: #a4aab2;
         font-size: 13px; }
@@ -54,7 +53,13 @@
           font-size: 14px;
           margin-bottom: 30px; }
 
-        .user-login-5 .login-container > .register-content > .login-form input {
+        .user-login-5 .login-container > .register-content > .register-form{
+          margin-top: 30px;
+          color: #a4aab2;
+          font-size: 13px; }
+
+
+        .user-login-5 .login-container > .register-content > .register-form input {
           width: 100%;
           padding: 10px;
           border-bottom: 1px solid;
@@ -64,12 +69,12 @@
         }
 
           .user-login-5 .login-container > .login-content > .login-form input:focus,
-          .user-login-5 .login-container > .register-content > .login-form input:focus{
+          .user-login-5 .login-container > .register-content > .register-form input:focus{
             outline: 0; }
         .user-login-5 .login-container > .login-content > .login-form .forgot-password,
-        .user-login-5 .login-container > .register-content > .login-form .forgot-password,
+        .user-login-5 .login-container > .register-content > .register-form .forgot-password,
         .user-login-5 .login-container > .login-content > .login-form .login-button,
-        .user-login-5 .login-container > .register-content > .login-form .login-button{
+        .user-login-5 .login-container > .register-content > .register-form .login-button{
           display: inline-block; }
         .user-login-5 .login-container > .login-content > .login-form .rem-password {
           margin-top: 10px; }
@@ -78,17 +83,17 @@
           .user-login-5 .login-container > .login-content > .login-form .rem-password > .rem-checkbox {
             border-color: #a4aab2; }
         .user-login-5 .login-container > .login-content > .login-form .forgot-password,
-        .user-login-5 .login-container > .register-content > .login-form .forgot-password{
+        .user-login-5 .login-container > .register-content > .register-form .forgot-password{
           margin-right: 1em; }
           .user-login-5 .login-container > .login-content > .login-form .forgot-password > a,
-          .user-login-5 .login-container > .register-content > .login-form .forgot-password > a{
+          .user-login-5 .login-container > .register-content > .register-form .forgot-password > a{
             color: #a4aab2; }
             .user-login-5 .login-container > .login-content > .login-form .forgot-password > a:hover,
-            .user-login-5 .login-container > .register-content > .login-form .forgot-password > a:hover{
+            .user-login-5 .login-container > .register-content > .register-form .forgot-password > a:hover{
               color: #337ab7;
               text-decoration: none; }
             .user-login-5 .login-container > .login-content > .login-form .forgot-password > a:focus,
-            .user-login-5 .login-container > .register-content > .login-form .forgot-password > a:focus{
+            .user-login-5 .login-container > .register-content > .register-formm .forgot-password > a:focus{
               color: #a4aab2;
               text-decoration: none; }
     .user-login-5 .login-container > .login-footer {
