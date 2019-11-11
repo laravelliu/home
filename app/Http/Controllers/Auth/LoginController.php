@@ -26,6 +26,10 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = '/admin/dashboard';
+    #登录次数限制
+    protected $maxAttempts = 2;
+    #登录时间内归0，单位分钟
+    protected $decayMinutes =2;
 
     /**
      * Create a new controller instance.

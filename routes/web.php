@@ -19,6 +19,8 @@ Route::get('/', function () {
 });
 
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+
+#对应路由在Routing/Router下
 Auth::routes(['verify'=>true]);
 
 Route::get('/home', 'Admin\DashboardController@index')->name('home')->middleware('verified');

@@ -47,7 +47,7 @@
                         <div class="col-sm-4">
                             <div class="rem-password">
                                 <p>记住我
-                                    <input type="checkbox" class="rem-checkbox" />
+                                    <input type="checkbox"  name="remember" class="rem-checkbox" {{ old('remember') ? 'checked' : '' }} />
                                 </p>
                             </div>
                         </div>

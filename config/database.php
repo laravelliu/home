@@ -134,6 +134,7 @@ return [
             'database' => env('REDIS_DB', 0),
         ],
 
+        #注意缓存是表1
         'cache' => [
             'url' => env('REDIS_URL'),
             'host' => env('REDIS_HOST', '127.0.0.1'),
