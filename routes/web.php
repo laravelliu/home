@@ -40,3 +40,4 @@ Route::get('/life', function(){
     return view('resume');
 });
 
+

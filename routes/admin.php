@@ -10,5 +10,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('dashboard','DashboardController@index')->middleware('admin');
 
+Route::group(['prefix'=>'father'],function(){
+   Route::get('card','FatherController@card');
+});
 
 Route::get('count','DashboardController@index');

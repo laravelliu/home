@@ -119,7 +119,7 @@ return [
 
     'redis' => [
 
-        'client' => env('REDIS_CLIENT', 'phpredis'),
+        'client' => env('REDIS_CLIENT', 'phpredis'), //这里之前是Predis，6.0升级成了phpredis
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
@@ -134,7 +134,7 @@ return [
             'database' => env('REDIS_DB', 0),
         ],
 
-        #注意缓存是表1
+        //注意缓存是表1
         'cache' => [
             'url' => env('REDIS_URL'),
             'host' => env('REDIS_HOST', '127.0.0.1'),
