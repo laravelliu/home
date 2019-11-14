@@ -13,37 +13,21 @@
         <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
         <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
 
-            <li class="nav-item start">
-                <a href="javascript:;" class="nav-link nav-toggle">
+            <li class="nav-item start {{Request::getRequestUri() == '/admin/dashboard' ? 'active':''}}">
+                <a href="{{URL::to('/admin/dashboard')}}" class="nav-link nav-toggle">
                     <i class="icon-home"></i>
-                    <span class="title">Dashboard</span>
-                    <span class="arrow"></span>
+                    <span class="title">后台数据</span>
+                    <span class="selected"></span>
                 </a>
-                <ul class="sub-menu">
-                    <li class="nav-item start ">
-                        <a href="index.html" class="nav-link ">
-                            <i class="icon-bar-chart"></i>
-                            <span class="title">Dashboard 1</span>
-                        </a>
-                    </li>
-                    <li class="nav-item start ">
-                        <a href="dashboard_2.html" class="nav-link ">
-                            <i class="icon-bulb"></i>
-                            <span class="title">Dashboard 2</span>
-                            <span class="badge badge-success">1</span>
-                        </a>
-                    </li>
-                    <li class="nav-item start ">
-                        <a href="dashboard_3.html" class="nav-link ">
-                            <i class="icon-graph"></i>
-                            <span class="title">Dashboard 3</span>
-                            <span class="badge badge-danger">5</span>
-                        </a>
-                    </li>
-                </ul>
             </li>
             <li class="heading">
                 <h3 class="uppercase">老爸需要的功能</h3>
+            </li>
+            <li class="nav-item {{Request::getRequestUri() == '/admin/father/card' ? 'active':''}} ">
+                <a href="{{URL::to('/admin/father/card')}}" class="nav-link ">
+                    <span class="title">身份证信息查验</span>
+                    <span class="`selected"></span>
+                </a>
             </li>
             <li class="nav-item">
                 <a href="javascript:;" class="nav-link nav-toggle">

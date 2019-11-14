@@ -36,4 +36,14 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * 获取查询过的身份
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @author: liuFangShuo
+     */
+    public function getCardResult()
+    {
+        return $this->hasMany('App\Models\CardResultModel','user_id','id');
+    }
 }

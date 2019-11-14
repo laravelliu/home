@@ -12,6 +12,7 @@ Route::get('dashboard','DashboardController@index')->middleware('admin');
 
 Route::group(['prefix'=>'father'],function(){
    Route::get('card','FatherController@card');
+   Route::post('card','FatherController@postCard');
 });
 
 Route::get('count','DashboardController@index');
