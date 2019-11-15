@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Barryvdh\Debugbar\ServiceProvider as DebugerServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,6 +17,7 @@ class AppServiceProvider extends ServiceProvider
         //只有本地加载
         if ($this->app->isLocal()) {
             $this->app->register(TelescopeServiceProvider::class);
+            $this->app->register(DebugerServiceProvider::class);
         }
     }
 
