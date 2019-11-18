@@ -30,55 +30,60 @@
             <h1>lfs日常开发</h1>
             <p>此软件主要用于lfs自己对新技术的尝试和一些生活琐事的记录。<br>各种想做的事情，甚至谋划的事情。</p>
             <form action="{{route('register')}}" class="register-form" method="post">
-                <div class="alert alert-danger display-hide">
-                    <button class="close" data-close="alert"></button>
-                    <span>你找按要求填写啊！</span>
-                </div>
-                    <div class="form-body">
-                        <div class="form-group">
-                            <label>电子邮箱：</label>
-                            <div class="input-group">
-                                <span class="input-group-addon input-circle-left">
-                                    <i class="fa fa-envelope"></i>
-                                </span>
-                                <input type="text" class="form-control" name="email" autocomplete="off" placeholder="电子邮箱" required>
 
-                            </div>
+                <div class="form-body">
+                    <div class="form-group @if(!empty($errors->get('email'))) has-error @endif">
+                        <label>电子邮箱：</label>
+                        <div class="input-group">
+                            <span class="input-group-addon input-circle-left">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                            <input type="text" class="form-control" name="email" autocomplete="off" placeholder="电子邮箱" required>
                         </div>
-
-                        <div class="form-group">
-                            <label>名称：</label>
-                            <div class="input-group">
-                                <span class="input-group-addon input-circle-left">
-                                    <i class="fa fa-user"></i>
-                                </span>
-                                <input type="text" class="form-control" name="name" autocomplete="off" placeholder="昵称名称" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">密码：</label>
-                            <div class="input-group">
-                                 <span class="input-group-addon input-circle-left">
-                                    <i class="fa fa-asterisk"></i>
-                                </span>
-                                <input type="password" class="form-control" name="password" autocomplete="off" id="exampleInputPassword1" placeholder="密码" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">确认密码：</label>
-                            <div class="input-group">
-                                 <span class="input-group-addon input-circle-left">
-                                    <i class="fa fa-asterisk"></i>
-                                </span>
-                                <input type="password" class="form-control" name="password_confirmation" autocomplete="off" id="exampleInputPassword1" placeholder="再次输入密码" required>
-                            </div>
-                        </div>
-
-
-                        {{ csrf_field() }}
+                        @if(!empty($errors->get('email')))
+                            <span class="help-block">{{$errors->first('email')}}</span>
+                        @endif
                     </div>
+
+                    <div class="form-group @if(!empty($errors->get('name'))) has-error @endif">
+                        <label>名称：</label>
+                        <div class="input-group">
+                            <span class="input-group-addon input-circle-left">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" name="name" autocomplete="off" placeholder="昵称名称" required>
+                        </div>
+                        @if(!empty($errors->get('name')))
+                            <span class="help-block">{{$errors->first('email')}}</span>
+                        @endif
+                    </div>
+
+                    <div class="form-group @if(!empty($errors->get('password'))) has-error @endif">
+                        <label for="exampleInputPassword1">密码：</label>
+                        <div class="input-group">
+                             <span class="input-group-addon input-circle-left">
+                                <i class="fa fa-asterisk"></i>
+                            </span>
+                            <input type="password" class="form-control" name="password" autocomplete="off" id="exampleInputPassword1" placeholder="密码" required>
+                        </div>
+                        @if(!empty($errors->get('password')))
+                            <span class="help-block">{{$errors->first('password')}}</span>
+                        @endif
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">确认密码：</label>
+                        <div class="input-group">
+                             <span class="input-group-addon input-circle-left">
+                                <i class="fa fa-asterisk"></i>
+                            </span>
+                            <input type="password" class="form-control" name="password_confirmation" autocomplete="off" id="exampleInputPassword1" placeholder="再次输入密码" required>
+                        </div>
+                    </div>
+
+                    {{ csrf_field() }}
+                </div>
+
                 <div class="row">
                     <div class="col-sm-8 text-right pull-right">
                         <div class="forgot-password">

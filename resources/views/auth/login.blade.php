@@ -30,12 +30,12 @@
                 <h1>lfs日常开发</h1>
                 <p>此软件主要用于lfs自己对新技术的尝试和一些生活琐事的记录。<br>各种想做的事情，甚至谋划的事情。</p>
                 <form action="{{route('login')}}" class="login-form" method="post">
-                    @error('email') || error('password')
+                    @if($errors->any())
                     <div class="alert alert-danger">
                         <button class="close" data-close="alert"></button>
-                        <span>{{$message}}</span>
+                        <span>{{$errors->first()}}</span>
                     </div>
-                    @enderror
+                    @endif
                     <div class="row">
                         <div class="col-xs-6">
                             <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="随便输入" name="email" required/>

@@ -52,6 +52,13 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ],[
+            'email' => ':attribute需要有效的邮箱',
+            'required' => ':attribute不能为空',
+            'unique' => '邮箱已经存在',
+            'min' => ':attribute最少:min字符',
+            'max' => ':attribute最长:max字符',
+            'confirmed' => ':attribute输入不一致'
         ]);
     }
 
