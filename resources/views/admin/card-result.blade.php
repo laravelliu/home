@@ -15,7 +15,7 @@
                             <label for="inputPassword12" class="col-md-2 control-label">姓名</label>
                             <div class="input-group col-md-4">
                                 <span class="input-group-addon input-circle-left"><i class="fa fa-user"></i></span>
-                                <input type="text" class="form-control input-circle-right" name="name" value="lfs" disabled placeholder="姓名">
+                                <input type="text" class="form-control input-circle-right" name="name" value="{{$data['name']}}" disabled placeholder="姓名">
                             </div>
                         </div>
 
@@ -24,7 +24,7 @@
 
                             <div class="input-group col-md-4">
                                 <span class="input-group-addon input-circle-left"><i class="fa fa-envelope"></i></span>
-                                <input type="text" class="form-control input-circle-right" name="number" value="lfs" disabled placeholder="身份证号码">
+                                <input type="text" class="form-control input-circle-right" name="number" value="{{$data['number']}}" disabled placeholder="身份证号码">
                             </div>
                         </div>
 
@@ -33,7 +33,7 @@
 
                             <div class="input-group col-md-4">
                                 <span class="input-group-addon input-circle-left"><i class="fa fa-envelope"></i></span>
-                                <input type="text" class="form-control input-circle-right" name="number" value="lfs" disabled placeholder="地址">
+                                <input type="text" class="form-control input-circle-right" name="number" value="{{$data['address']}}" disabled placeholder="地址">
                             </div>
                         </div>
 
@@ -42,7 +42,7 @@
 
                             <div class="input-group col-md-4">
                                 <span class="input-group-addon input-circle-left"><i class="fa fa-envelope"></i></span>
-                                <input type="text" class="form-control input-circle-right" name="number" value="lfs" disabled placeholder="结果">
+                                <input type="text" class="form-control input-circle-right" name="number" value="{{$data['message']}}" disabled placeholder="结果">
                             </div>
                         </div>
 

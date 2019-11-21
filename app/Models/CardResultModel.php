@@ -11,6 +11,9 @@ class CardResultModel extends Model
     protected $primaryKey = 'id';
     public $timestamps = true;
 
+    //自主填充数据
+    public $fillable = [];
+
     /**
      * 获取对应用户
      * @return \Illuminate\Database\Eloquent\Relations\HasOne

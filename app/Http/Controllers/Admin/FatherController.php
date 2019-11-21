@@ -21,9 +21,14 @@ class FatherController extends Controller
 
         $name = $request->post('name');
         $number = $request->post('number');
-        $message = $repository->verifyExit($name,$number);
+        $return = $repository->verifyExit($name,$number);
 
-        return view('admin/card-result');
+        $data['name'] = $name;
+        $data['address'] = $return['address'];
+        $data['number'] = $number;
+        $data['message'] = $return['message'];
+
+        return view('admin/card-result',['data'=>$data]);
     }
 
     private function validateCard(Request $request)
