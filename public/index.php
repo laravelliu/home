@@ -9,6 +9,9 @@
 
 define('LARAVEL_START', microtime(true));
 
+#加载全局常量
+require __DIR__.'/../config/constants.php';
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader

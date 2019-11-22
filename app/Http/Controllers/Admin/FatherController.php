@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Interfaces\SdkInterface;
 use App\Repositories\CardRepository;
 use Illuminate\Http\Request;
+use Card;
 
 class FatherController extends Controller
 {
@@ -15,13 +17,13 @@ class FatherController extends Controller
     }
 
     //身份证提交
-    public function postCard(Request $request,CardRepository $repository)
+    public function postCard(Request $request)
     {
         $this->validateCard($request);
 
         $name = $request->post('name');
         $number = $request->post('number');
-        $return = $repository->verifyExit($name,$number);
+        $return = Card::verifyExit($name,$number);
 
         $data['name'] = $name;
         $data['address'] = $return['address'];
