@@ -40,4 +40,10 @@ Route::get('/life', function(){
     return view('resume');
 });
 
+/*Route::get('/face', function(){
+    return view('face');
+});*/
+
+Route::get('/face','HomeController@faces');
+
 

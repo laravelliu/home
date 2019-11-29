@@ -29,7 +29,7 @@
                         {{ csrf_field() }}
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
-                                <button type="submit" class="btn blue">登录</button>
+                                <button type="submit" class="btn blue">查询</button>
                             </div>
                         </div>
                     </form>
