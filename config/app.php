@@ -177,6 +177,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         App\Providers\SdkServiceProvider::class,
+        App\Providers\TencentServiceProvider::class
 
     ],
 
@@ -231,6 +232,7 @@ return [
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
         'Card' => App\Facades\CardFacade::class,
+        'Tencent' => App\Facades\TencentFacade::class
     ],
 
 ];

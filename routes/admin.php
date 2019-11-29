@@ -16,3 +16,8 @@ Route::group(['prefix'=>'father'],function(){
 });
 
 Route::get('count','DashboardController@index');
+
+Route::group(['prefix'=>'function'],function (){
+    Route::get('face','FaceController@index');
+    Route::post('face','FaceController@upload');
+});

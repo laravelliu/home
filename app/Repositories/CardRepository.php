@@ -9,7 +9,6 @@
 namespace App\Repositories;
 use App\Models\CardResultModel;
 use GuzzleHttp\Client;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use App\Interfaces\SdkInterface;

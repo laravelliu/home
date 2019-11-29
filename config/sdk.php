@@ -13,5 +13,9 @@ return [
         'appKey' => env('SDK_CARD_APP_KEY',''),
         'secretKey' => env('SDK_CARD_SECRET_KEY',''),
         'appCode' => env('SDK_CARD_CODE','')
+    ],
+    'tencent' => [
+        'appKey'=> env('TENCENT_APP_KEY',''),
+        'secretKey'=> env('TENCENT_SECRET_KEY',''),
     ]
 ];

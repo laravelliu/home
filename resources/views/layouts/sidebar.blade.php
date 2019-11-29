@@ -29,6 +29,16 @@
                     <span class="`selected"></span>
                 </a>
             </li>
+            <li class="heading">
+                <h3 class="uppercase">一些功能</h3>
+            </li>
+            <li class="nav-item {{Request::getRequestUri() == '/admin/function/face' ? 'active':''}} ">
+                <a href="{{URL::to('/admin/function/face')}}" class="nav-link ">
+                    <span class="title">人脸融合</span>
+                    <span class="`selected"></span>
+                </a>
+            </li>
+
             <li class="nav-item">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-diamond"></i>

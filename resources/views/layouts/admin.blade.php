@@ -13,6 +13,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="" name="description" />
     <meta content="" name="author" />
+
+    @section('css')
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -32,6 +34,7 @@
     <!-- END THEME LAYOUT STYLES -->
     <link rel="shortcut icon" href="favicon.ico" /> </head>
 <!-- END HEAD -->
+    @show;
 
 <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
 
@@ -759,6 +762,7 @@
 
 @include('layouts.footer')
 
+@section ('javascript')
 <!--[if lt IE 9]>
 <script src="/js/respond.min.js"></script>
 <script src="/js/excanvas.min.js"></script>
@@ -781,6 +785,9 @@
 <script src="/layout/scripts/demo.min.js" type="text/javascript"></script>
 <script src="/layout/scripts/quick-sidebar.min.js" type="text/javascript"></script>
 <!-- END THEME LAYOUT SCRIPTS -->
+
+@show
+
 </body>
 
 </html>
