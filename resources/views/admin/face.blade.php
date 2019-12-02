@@ -10,33 +10,33 @@
 
 @section('content')
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div id="uploader-demo">
                 <!--用来存放item-->
                 <div id="fileList" class="uploader-list"></div>
                 <div id="filePicker">选择图片</div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="ibox float-e-margins">
-                <div class="ibox-content">
-                    <h2>合成图片墙</h2>
-                    <div class="lightBoxGallery">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                        <img style="width: 100px;height: auto;margin: 20px" src="/images/avatar/avatar1.jpg">
-                    </div>
+        <div id="img-list" class="col-md-8">
+            <h2>合成图片墙</h2>
+            <div class="row align-items-md-center margin-bottom-10">
+                <div class="col-md-3 text-center">
+                    <img class="img-fluid" src="/images/avatar/avatar1.jpg">
                 </div>
+                <div class="col-md-1">
+                    <span style="text-align: center">+</span>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-fluid" src="/images/avatar/avatar1.jpg">
+                </div>
+                <div class="col-md-1">
+                    <span style="text-align: center">=</span>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-fluid" src="/images/avatar/avatar1.jpg">
+                </div>
+            </div>
+
             </div>
         </div>
     </div>
@@ -152,6 +152,7 @@
     // 文件上传成功，给item添加成功class, 用样式标记上传成功。
     uploader.on( 'uploadSuccess', function( file ) {
         $( '#'+file.id ).addClass('upload-state-done');
+
     });
 
     // 文件上传失败，显示上传出错。

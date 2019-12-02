@@ -66,10 +66,10 @@ class FaceController extends Controller
             $return['data'] = $data;
         } else {
             $return['code'] = 201;
-            $return['message'] = '失败';
+            $return['message'] = '融合失败';
         }
 
-        return json_encode($return);
+        return json_encode($return,JSON_UNESCAPED_UNICODE);
 
     }
 }

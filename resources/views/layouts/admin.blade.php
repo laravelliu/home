@@ -34,7 +34,7 @@
     <!-- END THEME LAYOUT STYLES -->
     <link rel="shortcut icon" href="favicon.ico" /> </head>
 <!-- END HEAD -->
-    @show;
+    @show
 
 <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
 
